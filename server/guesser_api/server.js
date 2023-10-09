@@ -8,7 +8,7 @@ const fileName = 'items.txt';                            // THIS SHOULD BE YOUR 
 let items = JSON.parse(fs.readFileSync(fileName));
 
 const corsOptions = {
-    origin: 'http://www.maximkim.com'
+    origin: 'https://www.maximkim.com'
   };
   
 app.use(cors(corsOptions));
