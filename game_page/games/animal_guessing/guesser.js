@@ -1,5 +1,5 @@
 "use strict";
-let website = 'https://neat-calculus-380102.uw.r.appspot.com';
+let website = 'https://first-website-8de55.uc.r.appspot.com/';
 let items;
 let currentItem;
 let scale=1.5;
