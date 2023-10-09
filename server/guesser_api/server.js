@@ -2,6 +2,7 @@
 const express = require('express');           // use the express library
 const app = express();  
 const fs = require('fs');                      // create an express application called app
+const cors = require('cors');
 
 const port = process.env.PORT || 8080 //was 9013
 const fileName = 'items.txt';                            // THIS SHOULD BE YOUR ASSIGNED PORT NUMBER
