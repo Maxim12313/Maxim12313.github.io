@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>WebSockets</title>
+  </head>
+  <body>
+    <h1>WebSockets</h1>
+      <div id="messages"></div>
+  
+      <script>
+          const websocket = new WebSocket("wss://cs.catlin.edu/ws/maxim");
+          websocket.addEventListener("open", newConnection);
+          function newConnection() {
+              console.log("We are connected");
+              websocket.send("How are you?");
+          }
+          
+          websocket.addEventListener('message', messageReceived);
+          function messageReceived(event) {
+              console.log("received: " + event.data);
+              let newElement = document.createElement('p');
+              newElement.innerHTML = event.data;
+              document.getElementById("messages").appendChild(newElement);
+              
+              websocket.send('random number ' + Math.random());
+          }
+      </script>
+  </body>
+  </html>

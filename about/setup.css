@@ -1,0 +1,54 @@
+.middle{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    column-gap:20px;
+}
+
+
+
+.middle img{
+        width:350px;
+    }
+
+p textSpace{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:350px;
+    overflow-wrap:normal;
+    font-family:inherit;
+    color:inherit;
+}
+
+
+
+.skillBoxes{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+    margin:20px;
+    padding:10px;
+    width:70%;
+}
+.skillName{
+    width:100%;
+    overflow-wrap:normal;
+    font-family:inherit;
+    color:rgb(30, 29, 29);
+    margin:30px;
+    width:30%;
+
+
+}
+
+.skillDescription{
+    width:100%;
+    overflow-wrap:normal;
+    font-family:'poppinsregular';
+    color:rgb(30, 29, 29);
+    
+}
+

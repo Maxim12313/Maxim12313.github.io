@@ -1,0 +1,113 @@
+
+big_text{
+    font-size: 50px;
+    color:rgb(215, 218, 220);
+}
+.u {
+    display:flex;
+    background-color: rgb(30, 32, 32);
+    justify-content:center;
+    margin-top:20px;
+    width:100%;
+    
+    
+}
+    .u a{
+        display:flex;
+        
+        width: 1000;
+        padding-top:40px;
+        padding-bottom:40px;
+        padding-left: 50%;
+        padding-right: 50%;
+        flex-wrap:nowrap;
+        
+        color: #f2f2f2;
+        font-size: 40px;
+        font-weight:700;
+    }
+
+    /* Change the color of links on hover */
+    .u a:hover {
+        background-color: #106eea;
+        color: black;
+    }
+
+
+
+.item1 {
+    text-decoration: none;
+}
+.item1 a:hover{
+    background-color: darkblue;
+}
+
+.item1 a{
+    background-color:blue;
+    position:absolute;
+    top:70%;
+    left:37%; 
+    display:flex;
+    color: #f2f2f2;
+    align-items: center;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item2 {
+    text-decoration: none;
+}
+
+.item2 a:hover{
+    background-color:darkred;
+}
+
+.item2 a{
+    position:absolute;
+    top:70%;
+    left:46%;
+    display:flex;
+    background-color:red;
+    color: #f2f2f2;
+    align-items: center;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item3 {
+    text-decoration: none;
+}
+
+.item3 a:hover{
+    background-color:darkgreen;
+}
+.item3 a{
+    position:absolute;
+    top:70%;
+    left:55%; 
+    display:flex;
+    background-color:green;
+    color: #f2f2f2;
+    align-items: center;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    position:absolute;
+    top:40%;
+    left:27%;
+}
+
+
+
+
+
+    
+

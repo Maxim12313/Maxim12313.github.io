@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kahoot</title>
+
+    <script src="kahoot.js"></script>
+    <link rel="stylesheet" href="../../../main/setup.css" />
+    <link rel="stylesheet" href="kahoot.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body onload="joinEvent()">
+    <div class="topnav">
+      <a class="active" href="../../../">Home</a>
+      <a href="../../">Games</a>
+      <a href="../../../about/">Contact</a>
+      <a href="https://github.com/Maxim12313">About</a>
+      <div class="area">
+        <l>Maxim Kim</l>
+      </div>
+    </div>
+
+    <div class="title">
+      <img src="../../../main/new_logo.png" />
+      <t>Kahoot Remake</t>
+      <!-- <img style = 'visibility:hidden' src="../main/new_logo.png"> -->
+      <p style="color: #ff0000">Max162717@gmail.com</p>
+    </div>
+
+    <div class="overall" id = 'overall'>
+      <div id = "startScreen">
+
+      <div>
+        <label for "username">Username</label>
+        <input type="text" id="username"/>
+      </div>
+      <br>
+
+      <!-- <div class="side">
+        <div>
+          <button onClick="joinGame(1)">Join Game 1</button>
+          <p id="players1"></p>
+          <p id="status1"></p>
+        </div>
+
+        <div>
+          <button onClick="joinGame(2)">Join Game 2</button>
+          <p id="players2"></p>
+          <p id="status2"></p>
+        </div>
+
+        <div>
+          <button onClick="joinGame(3)">Join Game 3</button>
+          <p id="players3"></p>
+          <p id="status3"></p>
+        </div>
+
+
+
+      </div> -->
+
+
+
+
+      <div>
+        <input type="text" id="join" />
+        <button onClick="joinGame(document.getElementById('join').value)" >Join</button>
+      </div>
+      <br/>
+      
+      <button id="create" onClick="createGame()">Create New Game</button>
+      <br/>
+      <br/>
+    </div>
+
+    <div class="names" id="names"></div>
+
+    </div>
+  </body>
+</html>

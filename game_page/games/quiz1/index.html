@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../../../main/new_logo.png" type="image/icon type">
+        <title>Cool Quiz</title>
+        <script src="buttonFunctions.js"></script>
+        <link rel="stylesheet" href="../../../main/setup.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a class="active" href="../../..">Home</a>
+            <a href="../..">Games</a>
+            <a href="../../../about/">About</a>
+            <a href="https://github.com/Maxim12313">Github</a>
+            <a href="https://www.teenink.com/users/MaximSucks">Writing</a>
+            <div class="area">
+                <l>Maxim Kim</l>
+            </div>
+          </div>
+
+        
+
+
+
+          <div class="title">
+              <img src="../../../main/new_logo.png">
+              <t>Useless Quiz</t>
+              <!-- <img style = 'visibility:hidden' src="../../../main/new_logo.png"> -->
+              <p style="color:red">Max162717@gmail.com</p>
+          </div>
+
+        <h3>What is 14+7?</h3>
+        <input type="radio" id="a1" name="q1">
+            <label for="a1">21!</label><br>
+        <input type="radio" id="a2" name="q1">
+            <label for="a2">21?</label><br>
+        <input type="radio" id="a3" name="q1">
+            <label for="a3">twenty-one</label><br>
+        <input type="radio" id="a4" name="q1">
+            <label for="a4"><strong>7+14</strong></label><br>
+
+        <h3>What pokemon is this?</h3>
+        <input type="radio" id="an1" name="q2">
+            <label for="an1"><strong>Pikachu</strong></label><br>
+        <input type="radio" id="an2" name="q2">
+            <label for="an2">Charizard</label><br>
+        <input type="radio" id="an3" name="q2">
+            <label for="an3">justin</label><br>
+        <input type="radio" id="an4" name="q2">
+            <label for="an4">Magikarp</label><br>
+        <img src="pikachu.png" width="200" height="200"><br>
+
+
+        <h3> What are your thoughts on <em>Sage's</em> food? Type all lowercase</h3>
+        <textarea rows="5" cols="40" id="textAnswer"></textarea>
+
+        <h3>When was <strong>Google</strong> created? do not <em>google</em> it</h3>
+        <select size="1" id="q4">
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998"><strong>1998</strong></option>
+            <option value="1997">1997</option>
+        </select><br>
+
+        <h3>What is the most optimal pizza?</h3>
+        <input type="checkbox" id="op1" name="pizza">
+            <label for="op1"><strong>pepperoni</strong></label><br>
+        <input type="checkbox" id="op2" name="pizza">
+            <label for="op2"><strong>cheese</strong></label><br>
+        <input type="checkbox" id="op3" name="pizza">
+            <label for="op3">pineapple</label><br><br>
+
+        <button onclick="checkAnswers()">Check Answers!</button><br>
+        <img id="outcome">
+    
+        <div class="spaceBelow"><p>Copyright <span>&copy;</span> 2022 Maxim Kim</p></div>
+    </body>
+</html>

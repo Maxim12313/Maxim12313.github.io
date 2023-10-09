@@ -1,0 +1,11 @@
+.storyText{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:150px;
+    margin-right:150px;
+    padding-top:20px;
+    padding-bottom:20px;
+    flex-wrap:wrap;
+    flex-direction:column;
+}

@@ -1,0 +1,19 @@
+question{
+    font-size:20px;
+    color:black;
+}
+
+
+
+.teach{
+    display:none;
+}
+
+compact{
+    row-gap:0px;
+}
+
+
+error{
+    color:red;
+}

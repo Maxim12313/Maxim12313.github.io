@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mr. Johnathan</title>
+        <link rel="icon" href="../../../main/new_logo.png" type="image/icon type">
+        <script src="graphics.js"></script>
+        <script src="guesser.js"></script>
+        <link rel="stylesheet" href="../../../main/setup.css">
+        <link rel="stylesheet" href="setup.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+    </head>
+
+    <body onload="startGraphics('graphics_canvas', false)">
+        <div class="topnav">
+            <a class="active" href="../../../">Home</a>
+            <a href="../../">Games</a>
+            <a href="../../../about">About</a>
+            <a href="https://github.com/Maxim12313">Github</a>
+            <a href="https://www.teenink.com/users/MaximSucks">Writing</a>
+            <div class="area">
+                <l>Maxim Kim</l>
+            </div>
+        </div>
+        <div class="title">
+            <img src="../../../main/new_logo.png">
+            <t>Mr. Johnathan</t>
+            <!-- <img style = 'visibility:hidden' src="../main/new_logo.png"> -->
+            <p style="color:#FF0000">Max162717@gmail.com</p>
+        </div>
+
+        <div class="overall">
+            <br><br>
+            <div class="column">
+                <div>
+                    <canvas id="graphics_canvas" width="400" height="300"></canvas>
+                    <div class="username">
+                        <question id="question"></question>
+                        <button onclick="yes()" id="yes">
+                            Yes
+                        </button>
+                        <button onclick="no()" id='no'>
+                            No
+                        </button>
+                        <button onClick="retry()" id="retry" style="display:none">
+                            Retry
+                        </button>
+                    </div>
+                </div>
+                <div class="teach" id="teachHolder">
+                    <h3>I want to be smarter. Help me out!</h3>
+                    <p>What animal were you thinking of?</p>
+                    <input type="text" id="item_animal"></input>
+                    <br>
+                    <p>
+                        <compact>What is a yes or no question that distinguishes</compact>
+                        <br>
+                        <compact>between your animal and a <span id="first_animal"></span>?</compact>
+                    </p>
+                    <input type="text" id="item_question"></input>
+                    <p>What is the correct answer to that question?(yes, no)</p>
+                    <input type="text" id="item_answer"></input>
+                    <br><br>
+                    <error id="error">ERROR: revise your answers.</error>
+                    <br>
+                    <button onClick="addItem()" id="submit">Submit</button>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <p>Think of an animal and Mr. Johnathan will try and guess it</p>
+            <br><br>
+           
+            
+            
+        </div>
+
+
+        <div class="overallYellow">
+            <h1>
+                <grey>
+                    How It Works
+                </grey>
+            </h1>
+
+            <p>
+                <grey>
+                    There are a series of questions, which are fetched from my database: https://cs.catlin.edu/node/maxim/main/guesser_api. If the animal you're thinking of is not in the database, then you add it, and you can see that change being made by following the link. Now, Johnathan permanently remembers that animal, and if anyone uses that animal again, Johnathn will guess it correctly.
+                </grey> 
+            </p>
+
+        </div>
+
+
+        <div class="spaceBelow">
+            <a href="https://www.freepik.com/vectors/cartoon-emotions">Cartoon emotions vector created by pch.vector - www.freepik.com</a>
+            <p>Copyright <span>&copy;</span> 2022 Maxim Kim</p>
+        </div>
+    </body>
+</html>

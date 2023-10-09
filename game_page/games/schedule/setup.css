@@ -1,0 +1,11 @@
+.down{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+input[type="text"] {
+    width: 100px;
+}

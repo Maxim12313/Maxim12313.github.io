@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boids Simulation</title>
+        <link rel="icon" href="../../../main/new_logo.png" type="image/icon type">
+        <script src="graphics.js"></script>
+        <script src="boids.js"></script>
+        <link rel="stylesheet" href="../../../main/setup.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+    </head>
+
+    <body onload="startGraphics('graphics_canvas', false)">
+
+        <div class="topnav">
+            <a class="active" href="../../..">Home</a>
+            <a href="../../">Games</a>
+            <a href="../../../about/">About</a>
+            <a href="https://github.com/Maxim12313">Github</a>
+            <a href="https://www.teenink.com/users/MaximSucks">Writing</a>
+            <div class="area">
+                <l>Maxim Kim</l>
+            </div>
+        </div>
+
+        <div class="title">
+            <img src="../../../main/new_logo.png">
+            <t>Boids Simulation</t>
+            <!-- <img style = 'visibility:hidden' src="../main/new_logo.png"> -->
+            <p style="color:#FF0000">Max162717@gmail.com</p>
+          </div>
+
+        <div class="overall">
+            <div class="column">
+                <canvas id="graphics_canvas" width="950" height="600"></canvas> 
+                <div>
+                    <div class="pair">
+                        <p>Number of Boids</p>
+                        <input type="range" min="1" max="100" id="numOfBoids">
+                    </div>
+    
+                    <div class="pair">
+                        <p>Cohesion radius</p>
+                        <input type="range" min="1" max="300" id ='cohesionRadius'>
+                    </div>
+    
+                    <div class="pair">
+                        <p>Seperation radius</p>
+                        <input type="range" min="1" max="300" id ='seperationRadius'>
+                    </div>
+    
+                    <div class="pair">
+                        <p>Alignment radius</p>
+                        <input type="range" min="0" max="300" id ='alignmentRadius'>
+                    </div>
+
+                    <div class="pair">
+                        <p>Cohesion Strength</p>
+                        <input type="range" min="0" max="20" id ='cohesionStrength'>
+                    </div>
+
+                    <div class="pair">
+                        <p>Seperation Strength</p>
+                        <input type="range" min="0" max="30" id ='seperationStrength'>
+                    </div>
+
+                    <div class="pair">
+                        <p>Alignment Strength</p>
+                        <input type="range" min="0" max="10" id ='alignmentStrength'>
+                    </div>
+
+                        
+    
+                    <div class="pair">
+                        <p>Minimum velocity</p>
+                        <input type="range" min="1" max="30" id="minVelocity">
+                    </div>
+    
+                    <div class="pair">
+                        <p>Maximum velocity</p>
+                        <input type="range" min="1" max="30" id="maxVelocity">
+                    </div>
+    
+                    <div class="pair">
+                        <p>Boid radius</p>
+                        <input type="range" min="1" max="100" id="radius">
+                    </div>
+
+                    <div class="pair">
+                        <p>Overall Opacity</p>
+                        <input type="range" min="1" max="100" id="opacity">
+                    </div>
+    
+    
+                    <div class = "pair">
+                        <button onClick="reset()">
+                            Start
+                        </button>
+                        
+                        <button onClick="standard()">
+                            Default
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="overallYellow">
+            <h1>
+                <grey>
+                    How It Works
+                </grey>
+            </h1>
+
+            <p>
+                <grey>
+                    There are 3 types of forces that determine the x and y velocity of a boid. Cohesion, seperation, and alignment, and you can change their strengths just by altering a constant in their calculation. Cohesion is the boid's movement towards the center of all the boids within a designated distance. Seperation is the movement away from all boids within a designated distance. Alignment is the alignment of boids towards the average velocity of nearby boids within a designated distance.
+                </grey> 
+            </p>
+
+        </div>
+        <div class="spaceBelow"><p>Copyright <span>&copy;</span> 2022 Maxim Kim</p></div>
+       
+    </body>
+</html>

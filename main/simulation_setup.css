@@ -1,0 +1,21 @@
+
+.pair{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:baseline;
+    column-gap:10px;
+  }
+
+.vertical{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:baseline;
+
+}
+
+input[type="text"] {
+    width: 100px;
+}
+

@@ -1,0 +1,29 @@
+.side {
+    display:flex;
+    flex-direction:row;
+    column-gap:20px;
+
+}
+
+.side .main{
+    display:flex;
+    flex-grow:1;
+}
+
+.side .rightList{
+    display:flex;
+    flex-direction:column;
+    flex-grow:0;
+    row-gap:10px;
+    padding:50px;
+    margin:10px;
+    margin-left:auto;
+}
+
+.names{
+    display:flex; 
+    flex-direction:row;
+    row-gap:20px;
+    column-gap:20px;
+    flex-wrap:wrap;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predator Prey Simulation</title>
+        <link rel="icon" href="../../../main/new_logo.png" type="image/icon type">
+        <script src="graphics.js"></script>
+        <script src="predator_prey.js"></script>
+        <link rel="stylesheet" href="../../../main/setup.css">
+        <link rel="stylesheet" href="../../../main/simulation_setup.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body onload="startGraphics('graphics_canvas', false)">
+
+        <div class="topnav">
+            <a class="active" href="../../..">Home</a>
+            <a href="../..">Games</a>
+            <a href="../../../about/">About</a>
+            <a href="https://github.com/Maxim12313">Github</a>
+            <a href="https://www.teenink.com/users/MaximSucks">Writing</a>
+            <div class="area">
+                <l>Maxim Kim</l>
+            </div>
+        </div>
+
+        <div class="title">
+            <img src="../../../main/new_logo.png">
+            <t>Predator Prey Simulation</t>
+            <!-- <img style = 'visibility:hidden' src="../main/new_logo.png"> -->
+            <p style="color:#FF0000">Max162717@gmail.com</p>
+          </div>
+
+
+        <div class="overall">
+            <div class="column">
+                    <canvas id="graphics_canvas" width="800" height="600"></canvas> 
+                    <!-- <br>
+                    <top>Some Combinations</top>
+                    <text>Spontaneous (default): half chance of reproducing and short predator starvation time</text>
+                    <text>Herds: low chance of reproduction and long predator starvation time</text>
+                    <text>Scattered: low chance of reproduction, long predator starvation time, and many days before reproduction</text>
+                    <text>Headache: offset the row:col by a ton and let your brain go wild, recognizing random patterns forming</text> -->
+
+                
+                <div>
+                    <div class="pair">
+                        <p>Add grid</p>
+                        <input type="checkbox" id="isGrided"> 
+                    </div>
+
+
+                    <div class="pair">
+                        <p>Adjust 1:1 row:column for row</p>
+                        <input type="checkbox" id="adjust"> 
+                    </div>
+                    <div class="pair">
+                        <p>Number of rows</p>
+                        <input type="range" min="1" max="200" id="rowNum">
+                    </div>
+
+                    <div class="pair">
+                        <p>Number of columns</p>
+                        <input type="range" min="1" max="200" id="colNum">
+                    </div>
+
+                    <div class="pair">
+                        <p>Starting prey in field</p>
+                        <input type="range" min="1" max="150" id="startingPrey">
+                    </div>
+
+                    <div class="pair">
+                        <p>Starting predators in field</p>
+                        <input type="range" min="1" max="150" id ='startingPredators'>
+                    </div>
+
+                    <div class="pair">
+                        <p>Days predators can starve</p>
+                        <input type="range" min="1" max="15" id ='starveDays'>
+                    </div>
+                        
+                        
+
+                    <div class="pair">
+                        <p>Frames per day</p>
+                        <input type="range" min="1" max="60" id ='day'>
+                    </div>
+                        
+
+                    <div class="pair">
+                        <p>Prey days before reproduction</p>
+                        <input type="range" min="1" max="10" id="preyRepAge">
+                    </div>
+
+                    <div class="pair">
+                        <p>Predator days before reproduction</p>
+                        <input type="range" min="1" max="10" id="predatorRepAge">
+                    </div>
+
+                    <div class="pair">
+                        <p>Prey chance of reproduction</p>
+                        <input type="range" min="1" max="100" id="preyRepChance">
+                    </div>
+
+                    <div class="pair">
+                        <p>Predator chance of reproduction</p>
+                        <input type="range" min="1" max="100" id="predatorRepChance">
+                    </div>
+
+                    <div class="pair">
+                        <div class="vertical">
+                            <p>Prey color</p>
+                            <input type="text" id="preyColor">
+                        </div>
+                        <div class="vertical">
+                            <p>Predator color</p>
+                            <input type="text" id="predatorColor">
+                        </div>
+
+                        <div class ='vertical'>
+                            <p>Background color</p>
+                            <input type="text" id="backgroundColor">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class = "pair">
+                        <button onClick="reset()">
+                            Start
+                        </button>
+                        
+                        <button onClick="standard()">
+                            Default
+                        </button>
+
+                        <a href="https://www.w3schools.com/colors/colors_picker.asp">
+                            Color Maker
+                        </a>
+
+                        <a href="https://www.w3schools.com/tags/ref_colornames.asp">
+                            Color Picker
+                        </a>
+                    </div>
+
+                    
+                 
+                </div>
+            </div>
+
+           
+            <!-- <div class="bottom">
+                <top>Description</top>
+                <br>
+                <text>The program simulates predator prey population changes and movement. Both animals can do 1 thing each day, either moving, eating, or reproducing. Animals have to reach a certain age of maturity and every day afterwards will have a chance to reproduce. Animals reproduce by moving to a new grid and leaving behind a baby. Preys can only move to open grids, while Predators can also move into prey grids and kill them. If predators go too long without food, they will die. The movements of both animals are random, so there is no hunting or running.</text>
+                 
+            </div> -->
+                  
+   
+
+
+            
+            
+
+
+            
+        </div>
+
+
+        <div class="overallYellow">
+            <h1>
+                <grey>
+                    How It Works
+                </grey>
+            </h1>
+
+            <p>
+                <grey>
+                    There are predators and prey that interact under some rules. Animals can only move in cardinal directions, not diagonal. Every day, animals have a chance to move, reproduce, or die. Predators can also eat. After living a certain number of days, animals have a chance to reproduce. After a certain amount of days without food, predators die. Prey have infinite food and we can image they're always fed. Animals move randomely, and so are not actively evading or seeking. 
+                </grey> 
+            </p>
+
+        </div>
+
+
+        <div class="spaceBelow"><p>Copyright <span>&copy;</span> 2022 Maxim Kim</p></div>
+        
+    </body>
+</html>

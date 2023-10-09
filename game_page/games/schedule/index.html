@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Short Schedule</title>
+        <link rel="icon" href="../../../main/new_logo.png" type="image/icon type">
+        <script src="graphics.js"></script>
+        <script src="schedule.js"></script>
+        <link rel="stylesheet" href="setup.css">
+        <link rel="stylesheet" href="../../../main/setup.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    </head>
+
+    <body onload="startGraphics('graphics_canvas', false)">
+
+        <div class="topnav">
+            <a class="active" href="../../..">Home</a>
+            <a href="../..">Games</a>
+            <a href="../../../about/">About</a>
+            <a href="https://github.com/Maxim12313">Github</a>
+            <a href="https://www.teenink.com/users/MaximSucks">Writing</a>
+            <div class="area">
+                <l>Maxim Kim</l>
+            </div>
+        </div>
+
+        <div class="title">
+            <img src="../../../main/new_logo.png">
+            <t>Schedule</t>
+            <!-- <img style = 'visibility:hidden' src="../main/new_logo.png"> -->
+            <p style="color:#FF0000">Max162717@gmail.com</p>
+          </div>
+
+
+
+        <div class="overall">
+            <div class="column">
+                <canvas id="graphics_canvas" width="900" height="700"></canvas> 
+                <div class="middle">
+                    <h2 style="color:rgb(0, 188, 188)">
+                        Settings
+                    </h2>
+
+                    <p>Begin Time Custom</p>
+                    <input type="text" id="beginTime">
+                    
+                    <br>
+                    <br>
+                    <button onClick="beginNow()">
+                        Set Begin Time Now
+                    </button>
+
+
+                    <br>
+                    <br>
+                    <button onClick="reset()">
+                        Clear All
+                    </button>
+
+                    <br>
+                    <br>
+                    <button onClick="saveData()">
+                        Save
+                    </button>
+                        
+                    <h2 style="color:rgb(0, 188, 188)">
+                        New Activity
+                    </h2>
+                    
+                    <p>Activity Name</p>
+                    <input type="text" id="activityName">
+
+                    <p>Activity Color</p>
+                    <input type="text" id="activityColor">
+
+                    <div style="display:flex; flex-direction:row">
+                        <p>
+                            <input type="radio" id="durationCheck" name="q1">
+                                <label for="a1">Duration</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" id="endTimeCheck" name="q1">
+                                <label for="a2">Endtime</label><br>
+                        </p>
+                    </div>
+                
+                    <div style="display:flex; flex-direction:column;"" id="durationBox">
+                        <p>Duration (minutes)</p>
+                        <input type="text" id="activityDuration">
+                    </div>
+
+                    <div style="display:flex; flex-direction:column;" id="endTimeBox">
+                        <p>Endtime</p>
+                        <input type="text" id="activityEndtime">
+                    </div>
+
+                    
+
+                    <br>
+                    <br>
+
+                    <button onClick="updateValues()">
+                        Add
+                    </button>
+
+                    
+                    
+
+                   
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="spaceBelow"></div>
+
+
+        
+    </body>
+</html>

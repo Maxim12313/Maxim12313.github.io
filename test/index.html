@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>My Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="clicker.css">
+
+    <script>
+        // called when the body loads, to establish the server-sent events connection
+        function clickEvents() {
+            let eventSource = new EventSource('https://cs.catlin.edu/node/maxim/main/test6/clicks');
+            eventSource.addEventListener("counts", updateCounts);
+        }
+
+        // called when new counts arrive from the server
+        function updateCounts(event) {
+            let counts = JSON.parse(event.data);
+            for (let color in counts) {
+                document.getElementById(color).innerHTML = counts[color];
+            }
+        }
+
+        // called when the user clicks a color button
+        async function clicked(color) {
+            response = await fetch('https://cs.catlin.edu/node/maxim/main/test6/click/' + color, {method: 'POST'});
+        }
+    </script>
+
+  </head>
+  <body>
+    <div class="buttons">
+        <button onclick="clickEvents()">You suck</button>
+        <button id="red" onclick="clicked(this.id)">Red</button>
+        <button id="green" onclick="clicked(this.id)">Green</button>
+        <button id="blue" onclick="clicked(this.id)">Blue</button>
+    </div>
+  </body>
+</html>
