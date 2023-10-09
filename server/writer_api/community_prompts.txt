@@ -1,0 +1,12 @@
+[
+    [
+        "You're at a party wearing clothes your parents said you're not allowed to. Describe the situation and how you feel",
+        "Somebody spills soda on your clothes. Describe the situation and your reaction.",
+        "Somebody posted a picture and your parents see you in the outfit. Describe the situation and what you say to your parents."
+    ],
+    [
+        "You see a girl hitting a boy and go up to defend the boy. Describe the situation and what you say.",
+        "They laugh at you saying they were just pretending and they’re friends. Describe the situation and your reaction",
+        "The girl's older brother comes up and gets mad at you for threatening his sister. Describe the situation and your response."
+    ]
+]   
