@@ -179,7 +179,7 @@ function vectorMinMax(velocityX,velocityY){
     }
 }
 
-
+l
 function seperationVector(thisBoid,neighborBoids){
     let velocityX=0;
     let velocityY=0;
@@ -312,7 +312,6 @@ function reset(){
 
 
 function start(){
-    alert("I suck at positioning and decorating, so the pages will probably be ugly and not compatible with phone");
     reset();
 }
 
