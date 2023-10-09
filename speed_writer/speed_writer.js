@@ -18,7 +18,7 @@ let endTime=60;
 // let prompts = ["a", "b", "c", "d", "e"];
 // let x = Math.random() * prompts.length - 1;
 
-const path = "https://writer-api-dot-neat-calculus-380102.uw.r.appspot.com/";
+const path = "https://writer-api-dot-first-website-8de55.uc.r.appspot.com/";
 
 async function getRandomPrompts(extra_path){    //if extra is '', then normal, if '/community', then community single
     let response = await fetch(path+extra_path);
