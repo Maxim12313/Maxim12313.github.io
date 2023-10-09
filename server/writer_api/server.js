@@ -6,7 +6,7 @@ const cors = require('cors');
 const port = process.env.PORT || 8080//9215;
 
 const corsOptions = {
-    origin: 'http://www.maximkim.com'
+    origin: 'https://www.maximkim.com'
   };
   
 app.use(cors(corsOptions));
